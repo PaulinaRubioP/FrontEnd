@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- barra nav -->
+    <nav>
+        <h1 class="nav-title" onclick="aumentar_clicks()">Perfil</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick="cambiar_texto(this)">Inicio</a></li>
+            <li><a href="#" onclick="cambiar_texto(this)"class="active">My Profile</a></li>
+            <li><a href="#"onclick="cambiar_texto(this)">Encontrar conexiones</a></li>
+            <li><button class="btn" onclick="alerta()"> Logout </button></li>
+        </ul>
+    </nav>
+    <!-- tarjeta de presentación -->
+    <div class="div0">
+<div class="div1">
+    <div class="contenedor1" id="contenedor1">
+        <div class="card"> <!-- div tarjeta -->
+            <div class="card-header">
+                <img onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)"src="images/rosa.jpg" alt="user" class="icon">
+            </div>
+            <div class="card-body">
+                <input type="text" id="input_nombre" placeholder="Escribre aquí tu nombre">
+                <h1 id="nombre">Rosa Rubio</h1>
+                <h3 class="locacion">
+                    <img src="icons/map-marker.png" alt="Marcador de Mapa" class="icon" onclick="editar_perfil">
+                    Rengo
+                </h3>
+                <p class="parrafo_darkmode">
+                    Ingeniera Informática | Administración de Empresas
+                </p>
+                <a href="#" onclick="editar_perfil()">
+                    <img src="icons/gear.png" alt="engrane" class="icon" id="icon">
+                    editar perfil
+                </a>
+            </div>
+        </div>
+<!--------------------------------------------------------------------------------------------------------------->
+        <div class="cardEdu"> <!-- div tarjeta educación -->
+            <div class="cardEdu-header">
+                <h2 onclick="cambio_education(this)">Educación</h2>
+            </div>
+            <div class="cardEdu-body">
+                <p id="text1">
+                    Ninja de Coding Dojo - Desarrollo FRONT- END
+                </p>
+                <p id="text2">
+                    Octubre 2023- Noviembre 2023
+                </p>
+                <p id="text3">
+                    Futura Cinturón Amarillo
+                </p>
+            </div>
+        </div>
+    </div><!--Cierre div contenedor1 -->
+</div>
+    <!---------------------------------------------------------------------------------------------------------------------->
+<div class="div2">
+    <div class="contenedor2" id="contenedor2"><!--abre div contenedor2 -->
+        <div class="cardConnection"><!-- div tarjeta conexión -->
+            <div class="cardConn-header">
+                <img src="icons/num.PNG" alt="num" class="icon1">
+                <h2>Connection Request</h2>
+            </div>
+            <div class="cardConn-body">
+                    <img src="images/todd-s.jpg" alt="todd-s" class="img">
+                    <p class="usuario"> Todd E</p>
+                    <img  src="icons/accept-circle.png" alt="accept-circle" class="check" ondblclick="eliminar(this)"  >
+                    <img src="icons/close-circle.png" alt="close-circle" class="check" ondblclick="eliminar(this)">
+                    
+                <div class="cardConn-body2">
+                    <img src="images/phil-s.jpg" alt="phil-s" class="img">
+                    <p class="usuario"> Phil S</p>
+                    <img  src="icons/accept-circle.png" alt="accept-circle" class="check" ondblclick="eliminar(this)"  >
+                    <img src="icons/close-circle.png" alt="close-circle" class="check" ondblclick="eliminar(this)">
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+        <div class="cardFriends"><!-- div tarjeta friends -->
+            <div class="cardFriends-header">
+                <img src="icons/500.PNG" alt="num" class="icon1">
+                <h2>
+                    Yours Connection
+                </h2>
+            </div>
+            <div class="cardFriends-body">
+                <h3>
+                    <img src="images/adrien-s.jpg" alt="adrien-s" class="icon2">
+                    Adrien D
+                </h3>
+                <h3>
+                    <img src="images/anne-s.jpg" alt="anne-s" class="icon2">
+                    Anne J
+                </h3>
+                <h3>
+                    <img src="images/alayne-s.jpg" alt="alayne-s" class="icon2">
+                    Alayne-t
+                </h3>
+                <h3>
+                    <img src="images/arry-s.jpg" alt="arry-s" class="icon2">
+                    Arry Y
+                </h3>
+                <a href="https://web.facebook.com/paulina.rubio.p/" target="_blank">View More</a>.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

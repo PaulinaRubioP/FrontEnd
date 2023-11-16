@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Comic Sans MS', cursive;
+}
+.abuelo{
+    width: 650px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    vertical-align: top;
+    flex-direction: row-reverse;
+ 
+}
+.container2 {
+    border: 2px solid black;
+    margin-top: 15px;
+    width: 100px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    vertical-align: top;
+    flex-direction: column;
+    
+}
+.padre{
+    width: 450px;
+    height:1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin:15px 20px 15px 20px;
+    border: 2px solid black;
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+   
+}
+
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: space-between; /*horizontal*/
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 0px black;
+}
+/*Barra de Navegación*/
+nav {
+    margin: 0 auto;
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+.title{
+   text-align: center;
+   margin: 10px 10px 10px 10px;
+}
+.user {
+    width: 20px;
+    position: relative;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+}
+.avatar{
+    font-size: 15px;
+}

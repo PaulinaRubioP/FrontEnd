@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        body{
+            margin-left: 50px;
+            margin-right: 10px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background-color: #f9faf9;
+            }
+        div{
+            font-family: arial, sans-serif;
+        }
+        table{
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 20%;
+            }
+        td, th {
+                border: 1px solid #080808;
+                text-align: left;
+                padding: 8px;
+                }
+        </style>
+</head>
+<body>
+    <h1>Rosa Rubio</h1><!--titulo-->
+    <img src="images/portafolio.jpg" alt="portafolio" style="width:80px;height:100px;" >
+<div>
+    <p>
+        <a href="https://github.com/PaulinaRubioP" target="blank"><img src="images/github.png" alt="HTML tutorial" style="width:30px;height:30px;"> Github</a> 
+        <a href="https://www.linkedin.com/in/rosa-paulina-rubio-pacheco-89763b212/" target="blank"><img src="images/linkedin.png" alt="HTML tutorial" style="width:30px;height:30px;">Linkedin</a> 
+        <a href="mailto:paulina.rubio.p@gmail.com" target="blank"><img src="images/email.png" alt="HTML tutorial" style="width:30px;height:30px;">Email</a> 
+    </p>
+</div>
+<h2>Technologies</h2>
+    <table>
+        <thead>
+            <tr><!--fila encabezado-->
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>JavaScript</th>
+                <th>Database</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--fila 1-->
+                <td>HTML5</td>
+                <td>Django</td>
+                <td>Express</td>
+                <td>MySQL</td>
+            </tr>
+            <tr><!--fila 2-->
+                <td>CSS3</td>
+                <td>Flask</td>
+                <td>Mongoose</td>
+                <td>MongoDB</td>
+            </tr>
+            <tr><!--fila 3-->
+                <td>Bootstrap</td>
+                <td>Unittest</td>
+                <td>React</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table><br>
+    <h2>Coctact Me</h2>
+    <div><!--nombre-->
+        <label>Name:  </label>
+        <input type="text" name="name">
+        <label>email: </label>
+            <input type="email" name="email">
+    </div><br>
+    <div><!--descripción-->
+        <label>Message: </label><br>
+        <textarea name="Message" id="Messaje" cols="30" rows="10"></textarea>
+    </div><br>
+    <div><!--boton-->
+        <input type="submit" value="Send Message" style="color:rgb(80, 78, 78)">
+    </div>
+</body>
+</html>

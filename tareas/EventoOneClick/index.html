@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- barra nav -->
+    <nav>
+        <h1 class="nav-title">DOJONARY</h1>
+        <input type="search" placeholder="Buscar">
+        <input type="submit" value="Login" id="btn1"/>       
+        
+         <!--<button class="btn1">Login</button id="btn1" Value="Login">-->
+    </nav>
+    <div class="div0">
+            <div class="contenedor1" id="contenedor1">
+                <div class="card1"> <!-- div tarjeta uno -->
+                    <div class="card1-body">
+                        <h1>NINJA</h1> 
+                        <h3>noun</h3>
+                        <p>Plural: ninjas</p>
+                        <button class="element" id="element1" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="card1-rigth">
+                        <p>A practioner skilled in the <a href="#"> Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+<!--------------------------------------------------------------------------------------------------------------->
+                <div class="card2"> <!-- div tarjeta dos -->
+                    <div class="card2-body">
+                        <h1>NINJA</h1>
+                        <h3>
+                            noun
+                        </h3>
+                        <p>
+                            Plural: ninjas
+                        </p>
+                        <button class="element" onclick="add2()" id="element2">37 likes</button>
+                    </div>
+                    <div class="card2-rigth">
+                        <p>A <a href="#">Programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+        </div><!--Cierre div contenedor1 -->
+        <!---------------------------------------------------------------------------------------------------------------------->
+            <div class="contenedor2" id="contenedor2"><!--abre div contenedor2 -->
+                <div class="card3"><!-- div tarjeta tres -->
+                        <h3>Dojonary is defined by YOU</h3>
+                        <button class="btn4" onclick="hide(this)" id="btn4">Add Definition</button>
+                </div>
+            </div><!--Cierre div contenedor2 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
